@@ -1,0 +1,50 @@
+@import "../assets/global";
+
+
+.accordion {
+    &-item {
+        border: 0;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        &+& {
+            margin-top: 30px;
+        }
+    }
+    &-title {
+        padding: 19px 60px;
+        color: $black;
+        cursor: pointer;
+        position: relative;
+        font-size: 18px;
+        font-weight: 300;
+        &::before {
+            content: '+';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 29px;
+            color: $yellow;
+        }
+        &::before + .accordion-input:checked{
+            content: 'ˆ';
+        }
+    }
+    &-body {
+        display: none;
+        &>p {
+            color: $black;
+        }
+    }
+    &-input {
+        width: 0;
+        height: 0;
+        -webkit-appearance: none;
+        appearance: none;
+        position: absolute;
+        &:checked ~ .accordion-body {
+            display: block;
+        }
+        
+    }
+    
+}

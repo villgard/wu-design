@@ -1,0 +1,61 @@
+@import "functions";
+
+@mixin small-text() {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+@mixin heading() {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 300;
+}
+
+@mixin text-regular() {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+@mixin small-senibold-text() {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+@mixin tiny-text() {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 300;
+}
+
+@mixin phone-number() {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+}
+
+@mixin counter() {
+  font-size: 60px;
+  line-height: 100px;
+  font-weight: 400;
+}
+
+@mixin card-title() {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+@mixin card-link() {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+@mixin breadcrumb() {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+}

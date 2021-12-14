@@ -1,0 +1,13 @@
+@import "assets/global";
+
+
+.services-design {
+    &__title {
+        padding-left: 5px;
+        max-width: 977px;
+        margin-bottom: 68px;
+    }
+    &__accordion {
+        margin-bottom: 80px;
+    }
+}

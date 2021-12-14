@@ -1,0 +1,36 @@
+@import "../assets/global";
+
+
+.promotion {
+    &__title {
+        max-width: 665px;
+        margin-bottom: 68px;
+    }
+
+    &__banner {
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        margin-bottom: 60px;
+        color: $black;
+        @include text-regular();
+    }
+    &__list {
+        padding: 0;
+        margin-bottom: 56px;
+    }
+    &__item {
+        text-align: center;
+        flex: 1 1 17%;
+    }
+}
+
+.icon {
+    vertical-align: middle;
+    width: 90px;
+    margin-bottom: 15px; 
+    &__text {
+        margin: 0;
+    }
+}

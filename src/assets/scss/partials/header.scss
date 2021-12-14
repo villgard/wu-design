@@ -1,0 +1,148 @@
+@import "../assets/global";
+
+.logo {
+  width: 106px;
+  height: 75px;
+  padding: 0;
+  margin: 0;
+  &__link {
+    cursor: pointer;
+  }
+}
+
+.header {
+  max-width: 100%;
+  max-height: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-start;
+  &__fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  &__links {
+    @include small-text();
+    color: $white;
+    &-inner > *:hover {
+      color: $white;
+      cursor: pointer;
+    }
+  }
+  &__link {
+    &-tel {
+      padding-bottom: 8px;
+    }
+    &-btn {
+      padding-bottom: 5px;
+      border-bottom: 1px solid $yellow;
+      text-transform: uppercase;
+    }
+  }
+  &__menu {
+    width: calc(100% - 106px);
+  }
+}
+
+.social {
+  &__list {
+    margin: 0;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    &:nth-child(even) {
+      align-items: flex-end;
+      padding: 0; 
+    }
+  }
+  &__link {
+    @include small-text();
+    margin-bottom: 10px;
+    &-tel {
+      @include phone-number();
+      letter-spacing: 0.15em;
+      margin-bottom: 8px;
+      opacity: .9;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &-btn {
+      @include small-text();
+      padding-bottom: 5px;
+      border-bottom: 1px solid $yellow;
+      opacity: .9;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+@media (max-width: 910px) { 
+  .header {
+    justify-content: space-between;
+    &__menu {
+      flex-direction: column;
+      align-items: start;
+      position: fixed;
+      top: 75px; 
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(50, 50, 50, 0.9);
+      &.menu>.menu__list {
+        margin: 0;
+        flex-direction: column;
+        &>.menu__item {
+          padding: 20px 0;
+          &>.menu__link {
+            font-size: 2rem;
+          }
+        }
+      }
+      &>.social__list {
+        // margin-left: 20px;
+        flex-direction: row;
+        &>.social__item {
+          margin-left: 20px;
+        }
+      }
+    }
+    &__menu-toggle {
+      width: 35px;
+      height: 24px;
+      z-index: 105;
+      display: block;
+      position: relative;
+      cursor: pointer;
+      & span, &::before, &::after {
+        z-index: 105;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        background-color: $white;
+        transition: all .3s ease 0s;
+      }
+      &::before, &::after {
+        content: '';
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+      & span {
+        top: 50%;
+        transform: scale(1) translate(0, -50%);
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,86 @@
+@import "../assets/global";
+
+
+.projects-block {
+    margin-bottom: 140px;
+    &__title {
+        max-width: 215px;
+        margin-bottom: 68px;
+    }
+    &__gallery {
+        margin: 0 -60px;
+    }
+    &__about-page {
+        margin-bottom: 80px;
+    }
+}
+
+.proj {
+    &__card.col-md-4 {
+        max-width: 347px;
+        height: 395px;
+        padding: 0;
+        margin: 30px;
+    }
+    &__card.col-6 {
+        width: 550px;
+        height: 395px;
+        padding: 0;
+        margin: 30px;
+    }
+    &__name {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+}
+
+.project-block{
+    &__link {
+    margin-left: auto;
+    margin-right: auto;
+    }
+    &__loader {
+        position: relative;
+        &>img {
+            width: 15px;
+            margin-left: 15px;
+            animation: spin 2s linear infinite;
+        
+        }
+    }
+    &__portfolio {
+        margin-bottom: 60px;
+    }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+.gallery {
+    margin-bottom: 60px;
+    &__thumbnail {
+        max-width: calc(33% - 40px);
+        padding: 0;
+        &-big {
+            max-width: calc(50% - 30px);
+            &+& {
+                margin-left: 60px;
+            }
+        }
+        &>p {
+            margin: 15px 0 0;
+            color: $black;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 36px;
+        }
+
+    }
+    &__project-example>.row {
+        margin-bottom: 60px;
+    }
+}
+
+

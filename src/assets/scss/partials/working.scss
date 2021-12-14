@@ -1,0 +1,26 @@
+@import "../assets/global";
+
+.working {
+    margin-bottom: 80px;
+    &__title {
+        max-width: 425px;
+        margin-bottom: 48px;
+    }
+    &__text {
+        @include text-regular();
+        color: $black;
+        margin-bottom: 87px;
+    }
+    &__item {
+        max-width: 25%;
+    }
+    &-icon {
+          &-description {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            color: $black;
+          }
+    }
+}
