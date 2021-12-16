@@ -1,1 +1,1 @@
-console.log("file 1"),console.log("file 2");
+!function(){const e=document.getElementById("menu-toggler");if(e){const t=document.querySelector(".header__menu"),n=document.body;e.addEventListener("click",(function(e){e.preventDefault(),t.classList.toggle("_active"),n.style.overflow="hidden"}))}}(),console.log("file 2");

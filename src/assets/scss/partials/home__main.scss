@@ -5,11 +5,11 @@
         padding-top: 75px;
     }
     &__body {
-        padding: clamp(30px, 16%, 190px) 0;
+        padding: min(calc(30px + 16 * ((100vw - 320px) / (1280 - 320))), 190px) 0;
     }
     &__heading {
         position: relative;
-        padding-bottom: 30px;
+        padding-bottom: min(calc(15px + 16 * ((100vw - 320px) / (1280 - 320))), 30px);
         margin: 0;
         @include heading();
         color: $black;
@@ -23,19 +23,19 @@
             bottom: 0;
         }
     }
-    
+
     &__text {
-        margin: 30px 0;
+        margin: min(calc(15px + 16 * ((100vw - 320px) / (1280 - 320))), 30px) 0;
         @include text-regular();
     }
 
     &__btn {
         padding: 20px 36px 21px;
-        @include small-senibold-text(); 
+        @include small-semibold-text();
         color: $black;
         background-color: $yellow;
         border-radius: 2px;
-        &-dark { //кнопка для блока about и projects
+        &-dark {
             color: $yellow;
             background-color: $dark-1;
             padding: 20px 68px;
@@ -62,50 +62,66 @@
 @media (min-width: 767px) {
     .section {
         display: flex;
+        margin-bottom: -44.5%;
         &__body {
-            width: 50%;
+            width: 60%;
         }
-        
+        &__content {
+
+        }
         &__img {
             position: relative;
-            flex: 0 0 50%;
-            transform: translateX(-693px);
+            flex: 0 0 40%;
+            transform: translateX(-100%);
+            padding-bottom: 44.5%;
             &img {
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                top: 0;
-                right: 0;
-                bottom: 0;
+                top: 0; bottom: 0; right: 0; left: 0;
                 object-fit: cover;
             }
         }
     }
 }
 @media (max-width: 767px) {
-    .section__img, .about-section__img {
-        padding: 0 20px;
+    .section__img{
+        transform: translate(60px, 0);
+    }
+    .about-section__img {
+        transform: translate(60px, 0);
     }
 }
-/* Блок с достижениями под пераым экраном*/
 .achievements {
-    padding: max(90px, 30px) 0;
+    padding: min(calc(30px + 16 * ((100vw - 320px) / (1280 - 320))), 90px) 0;
+    &__list {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
     &__item {
-        max-width: 195px;
-        &:first-child {
-            max-width: 125px;
-        }
+        flex: 0 0 32%;
     }
     &__counter {
         margin-bottom: 10px;
-        font-size: 60px;
+        font-size: min(calc(30px + 16 * ((100vw - 320px) / (1280 - 320))), 60px);
         font-weight: 400;
-        line-height: 70px
+        line-height: min(calc(35px + 16 * ((100vw - 320px) / (1280 - 320))), 60px);
     }
     &__text {
         font-weight: 300;
-        font-size: 18px;
+        font-size: min(calc(14px + 16 * ((100vw - 320px) / (1280 - 320))), 18px);
         line-height: 26px;
-        margin-bottom: 20px;
+    }
+}
+@media (max-width: 690px) {
+    .achievements {
+        &__item {
+            margin-bottom: 15px;
+            //flex-basis:50%;
+        }
     }
 }

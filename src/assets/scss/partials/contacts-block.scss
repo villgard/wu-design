@@ -1,10 +1,14 @@
 @import "../assets/global";
 
     .contacts {
-
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
         &-block {
-            margin-bottom: 80px;
-            margin-top: 60px;
+            margin-bottom: min(calc(32px + 16 * ((100vw - 320px) / (1280 - 320))), 80px);
+            margin-top: min(calc(42px + 16 * ((100vw - 320px) / (1280 - 320))), 60px);
         }
         &__link {
             @include phone-number();
@@ -15,7 +19,6 @@
           }
           &-block {
             &__title {
-                margin-bottom: 68px;
                 max-width: 440px;
                 }
         }
@@ -24,12 +27,17 @@
             margin-right: 15px;
         }
         &__item {
+            display: flex;
+            align-items: center;
             &+& {
                 margin-bottom: 10px;
             }
         }
         &__list{
             padding: 0;
+            display: flex;
+            flex-direction: column;
+
         }
         &__page-links {
             margin-top: 35px;
@@ -38,7 +46,7 @@
 
     .call-ordered-btn {
         margin-left: 45px;
-        color: $dark-1;
+        color: $dark-1 !important;
         padding-bottom: 5px;
         border-bottom: 1px solid $yellow;
         opacity: .9;
@@ -49,13 +57,33 @@
     }
 
     .mail__link {
-        margin: 32px 0 37px;
+        margin: min(calc(16px + 16 * ((100vw - 320px) / (1280 - 320))), 32px) 0 min(calc(18px + 16 * ((100vw - 320px) / (1280 - 320))), 37px);
     }
 
     .map {
-        &>iframe {
+        //margin-left: auto;
+        &__frame {
+            border-radius: 5px;
             width: 550px;
             height: 245px;
-            border-radius: 5px;            
         }
     }
+@media screen and  (max-width: 992px) {
+    .map__frame {
+        max-width: 100%;
+        width: 470px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .contacts__content {
+        flex-direction: column;
+    }
+    .map {
+        width: 100%;
+        &__frame {
+            width: 100%;
+        }
+    }
+}

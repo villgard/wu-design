@@ -4,14 +4,16 @@
     &__title {
         padding-left: 5px;
         max-width: 372px;
-        margin-bottom: 68px;
+        margin-bottom: 60px;
     }
     &__list {
         padding: 0;
         margin: 0;
+        display: flex;
+        flex-direction: column;
     }
     &__item {
-        margin-bottom: 60px;
+        margin-bottom: min(calc(21px + 16 * ((100vw - 320px) / (1280 - 320))), 60px);
         border-radius: 2px;
         box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
         &:last-child {
@@ -28,26 +30,28 @@
         cursor: pointer;
         max-width: 124px !important;
         &-author {
-            max-width: 185px !important;   
+            max-width: 185px !important;
         }
     }
 }
 
 .card {
+    display: flex;
+    flex-direction: row;
     z-index: 0;
     border: 0;
     border-radius: 2px;
-    min-height: auto;
     &-img {
         object-fit: cover;
         border-radius: 2px 0px 0px 2px;
         flex: 0 0 33%;
-        
     }
 
     &-body {
-        min-height: 300px;
-        padding: 30px 40px 40px;
+        padding: min(calc(10px + 16 * ((100vw - 320px) / (1200 - 320))), 30px) min(calc(15px + 16 * ((100vw - 320px) / (1200 - 320))), 40px) min(calc(15px + 16 * ((100vw - 320px) / (1200 - 320))), 40px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     &-title {
@@ -57,20 +61,21 @@
 
     &-text {
         @include text-regular();
-        color: $black;       
+        color: $black;
     }
 
-    &-link { 
+    &-link {
         max-width: 222px;
         position: relative;
         z-index: 50;
         @include card-link();
         color: $dark-1 !important;
         cursor: pointer;
+        text-transform: uppercase;
         &::after {
             position: absolute;
             width: 102%;
-            height: 10px;
+            height: min(calc(7px + 16 * ((100vw - 320px) / (1160 - 320))), 10px);
             content: '';
             z-index: -10;
             left: -3px;
@@ -78,6 +83,12 @@
             bottom: 0;
             background-color: $yellow;
             border-radius: 2px;
-        } 
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        flex-direction: column;
     }
 }

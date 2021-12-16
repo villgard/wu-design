@@ -7,18 +7,18 @@
 }
 
 @mixin heading() {
-  font-size: 40px;
-  line-height: 60px;
+  font-size: min(calc(28px + 16 * ((100vw - 320px) / (1160 - 320))), 40px);
+  line-height: min(calc(42px + 16 * ((100vw - 320px) / (1160 - 320))), 60px);
   font-weight: 300;
 }
 
 @mixin text-regular() {
-  font-size: 18px;
-  line-height: 32px;
+  font-size: min(calc(14px + 16 * ((100vw - 320px) / (1160 - 320))), 18px);
+  line-height: min(calc(20px + 16 * ((100vw - 320px) / (1160 - 320))), 32px);
   font-weight: 300;
 }
 
-@mixin small-senibold-text() {
+@mixin small-semibold-text() {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -43,14 +43,14 @@
 }
 
 @mixin card-title() {
-  font-size: 26px;
-  line-height: 40px;
+  font-size: min(calc(16px + 16 * ((100vw - 320px) / (1160 - 320))), 26px);
+  line-height: min(calc(28px + 16 * ((100vw - 320px) / (1160 - 320))), 40px);
   font-weight: 400;
 }
 
 @mixin card-link() {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: min(calc(14px + 16 * ((100vw - 320px) / (1160 - 320))), 16px);
+  line-height: min(calc(14px + 16 * ((100vw - 320px) / (1160 - 320))), 18px);
   font-weight: 300;
 }
 

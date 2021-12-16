@@ -21,7 +21,7 @@
         <div class="_container-custom">
             <div class="wrapper">
                     <header class="header">
-                        
+                    
                         <a class="logo__link" 
                            href="../index.html">
                             <img class="logo navbar-brand"
@@ -83,17 +83,10 @@
                                 </li>
                             </ul>
                         </nav>
-                    
-                        
-                        
-                        
-                        <button class="header__menu-toggle">
+                    <button class="header__menu-toggle" id="menu-toggler">
                             <span></span>
                         </button>
                     </header>
-                    
-                            
-                    
             </div>
         </div>
     </div>
@@ -118,15 +111,15 @@
     </section>
     
     <section class="services-block services__page">
-      <div class="container _container-custom">
-        <ul class="services__list d-flex flex-column">
-          <li class="services__item card d-flex flex-row">
+      <div class="_container-custom">
+        <ul class="services__list">
+          <li class="services__item card">
             <img
                 class="card-img img-fluid"
                 src="../assets/images/services-block-1.png"
                 alt="Ландшафтный дизайн"
             />
-            <div class="card-body d-flex flex-column justify-content-around">
+            <div class="card-body">
               <h3 class="card-title">Ландшафтный дизайн</h3>
               <p class="card-text">
                 Ландшафтный дизайн способен сделать любую территорию красивой,
@@ -137,13 +130,13 @@
               <a href="#" class="card-link text-uppercase">Рассчитать стоимость</a>
             </div>
           </li>
-          <li class="services__item card d-flex flex-row">
+          <li class="services__item card">
             <img
               src="../assets/images/services-block-2.png"
               class="card-img img-fluid"
               alt="Интерьер"
             />
-            <div class="card-body d-flex flex-column justify-content-around">
+            <div class="card-body">
               <h3 class="card-title">Интерьер</h3>
               <p class="card-text">
                 В интерьере может преобладать один стиль или сочетаться несколько
@@ -154,13 +147,13 @@
               <button class="card-link text-uppercase">Рассчитать стоимость</button>
             </div>
           </li>
-          <li class="services__item card d-flex flex-row">
+          <li class="services__item card">
               <img
                 src="../assets/images/services-block-3.png"
                 class="card-img img-fluid"
                 alt="Экстерьер"
               />
-              <div class="card-body d-flex flex-column justify-content-around">
+              <div class="card-body">
                 <h3 class="card-title">Экстерьер</h3>
                 <p class="card-text">
                   Первое впечатление о дизайне начинается с фасада. Внешний вид
@@ -171,13 +164,13 @@
                 </a>
               </div>
           </li>
-          <li class="services__item card d-flex flex-row">
+          <li class="services__item card">
               <img
                 src="../assets/images/services-block-4.png"
                 class="card-img img-fluid"
                 alt="Общественные заведения"
               />
-              <div class="card-body d-flex flex-column justify-content-around">
+              <div class="card-body">
                 <h3 class="card-title">Общественные заведения</h3>
                 <p class="card-text">
                   Только креативное решение и индивидуальный подход поможет сделать
@@ -251,33 +244,33 @@
             <h2 class="contacts-block__title block-title text-uppercase">
                 СВЯЗАТЬСЯ С НАМИ
             </h2>
-            <div class="flex-wrap d-flex justify-content-between">
-                
-        <ul class="contacts__list d-flex flex-column justify-content-start ml-0">
-            <li class="contacts__item d-flex align-items-center">
+            <div class="contacts__content">
+    
+        <ul class="contacts__list">
+            <li class="contacts__item ">
                 <img src="../assets/images/call.svg" alt="tel" class="contacts__icon">
             <a href="callto:+38 (099) 267-61-86" class="contacts__link">
                     +38 (099) 267-61-86
-                </a>        
+                </a>
             </li>
-            <li class="contacts__item d-flex align-items-center">
+            <li class="contacts__item">
                 <img src="../assets/images/call.svg" alt="tel" class="contacts__icon">
                 <a href="callto:+38 (096) 123-08-58" class="contacts__link">
                         +38 (096) 123-08-58
-                </a>               
+                </a>
             </li>
-            <li class="contacts__item d-flex align-items-center">
-                <a href="mailto: objectplus13@gmail.com" class="call-ordered-btn">
+            <li class="contacts__item">
+                <a href="#" class="call-ordered-btn">
                     Заказать звонок
-                </a>        
+                </a>
             </li>
-            <li class="contacts__item d-flex align-items-center">
+            <li class="contacts__item">
                 <img src="../assets/images/mail_outline.svg" alt="mail" class="contacts__icon">
                 <a href="mailto: objectplus13@gmail.com" class="contacts__link mail__link">
                     objectplus13@gmail.com
-                </a>        
+                </a>
             </li>
-            <li class="contacts__item d-flex align-items-center">
+            <li class="contacts__item">
                 <img src="../assets/images/map.svg" alt="" class="contacts__icon">
                 <a href="#" class="contacts__link">
                     г. Харьков, ул. Сумская, 40
@@ -285,8 +278,8 @@
             </li>
         </ul>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.954349323174!2d36.23589295356249!3d50.00034606762052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e6f5ce0153%3A0xacfbd54c5bf0699!2zS2hkdHViYSwg0LLRg9C70LjRhtGPINCh0YPQvNGB0YzQutCwLCA0MCwg0KXQsNGA0LrRltCyLCDQpdCw0YDQutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDYxMDAw!5e0!3m2!1sru!2sru!4v1639334945123!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
-        </div> 
+            <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.954349323174!2d36.23589295356249!3d50.00034606762052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e6f5ce0153%3A0xacfbd54c5bf0699!2zS2hkdHViYSwg0LLRg9C70LjRhtGPINCh0YPQvNGB0YzQutCwLCA0MCwg0KXQsNGA0LrRltCyLCDQpdCw0YDQutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDYxMDAw!5e0!3m2!1sru!2sru!4v1639334945123!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
+        </div>
             </div>
         </div>
     </section>

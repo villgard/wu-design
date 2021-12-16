@@ -21,7 +21,7 @@
         <div class="_container-custom">
             <div class="wrapper">
                     <header class="header">
-                        
+                    
                         <a class="logo__link" 
                            href="../index.html">
                             <img class="logo navbar-brand"
@@ -83,17 +83,10 @@
                                 </li>
                             </ul>
                         </nav>
-                    
-                        
-                        
-                        
-                        <button class="header__menu-toggle">
+                    <button class="header__menu-toggle" id="menu-toggler">
                             <span></span>
                         </button>
                     </header>
-                    
-                            
-                    
             </div>
         </div>
     </div>
@@ -116,9 +109,13 @@
     </section>
     <section class="services-design">
       <div class="_container-custom">
-        <section class="services__item card d-md-flex flex-row">
-          <img src="../assets/images/services-block-5.png" alt="image" class="card-img-top img-fluid">
-          <div class="card-body">
+        <section class="services__item card">
+          <img
+                  src="../assets/images/services-block-5.png"
+                  class="card-img img-fluid"
+                  alt="Общественные заведения"
+          />
+          <div class="card-body d-flex">
             <h3 class="card-title">Дизайн-проект</h3>
             <p class="card-text">
               Дизайн-проект – это процесс создания и реализации интерьера в
@@ -127,10 +124,12 @@
               визуализацию, чертежную часть и авторский надзор процесса
               строительства и ремонта.
             </p>
-            <a href="#" class="card-link text-uppercase">Получить консультацию</a>
+            <a href="#" class="card-link ">
+              Рассчитать стоимость
+            </a>
           </div>
         </section>
-        <h2 class="services-design__title block-title text-uppercase">
+        <h2 class="services-design__title block-title">
           Стандартный дизайн-проект интерьера
         </h2>
         <div class="promotion__banner">
@@ -262,38 +261,37 @@
               </div>
           </div>
         </section>
-    
-        <section class="services__item card d-flex flex-row">
+        <section class="services__item card">
             <img
               src="../assets/images/services-block-6.png"
               class="card-img img-fluid"
               alt="image"
             />
-          <div class="card-body d-flex flex-column justify-content-around">
+          <div class="card-body">
             <h3 class="card-title">Пример дизайн-проекта</h3>
             <p class="card-text text">
               Дизайн проект интерьера включает все необходимые чертежи и документы,
               необходимые для того, чтобы реализовать задуманную работу.
             </p>
-            <a href="#" download class="card-link text-uppercase services-block__link"
+            <a href="#" download class="card-link services-block__link"
               >СКАЧАТЬ .PDF</a
             >
           </div>
         </section>
-        <section class="services__item card d-flex flex-row">
+        <section class="services__item card">
             <img
               src="../assets/images/services-block-7.png"
               class="card-img img-fluid"
               alt="Ландшафтный дизайн"
             />
-          <div class="card-body d-flex flex-column justify-content-around">
+          <div class="card-body">
             <h3 class="card-title">Авторский надзор</h3>
             <p class="card-text">
               Что такое авторский надзор, как избежать неприятностей в процессе
               ремонта или строительства, получить желаемый дизайн и сохранить
               нервные клетки, вы узнаете, прочитав этот материал.
             </p>
-            <a href="#" class="card-link text-uppercase services-block__link services-block__link-author"
+            <a href="#" class="card-link services-block__link services-block__link-author"
               >ЧИТАТЬ ПОДРОБНЕЕ</a
             >
           </div>
@@ -359,33 +357,33 @@
             <h2 class="contacts-block__title block-title text-uppercase">
                 СВЯЗАТЬСЯ С НАМИ
             </h2>
-            <div class="flex-wrap d-flex justify-content-between">
-                
-        <ul class="contacts__list d-flex flex-column justify-content-start ml-0">
-            <li class="contacts__item d-flex align-items-center">
+            <div class="contacts__content">
+    
+        <ul class="contacts__list">
+            <li class="contacts__item ">
                 <img src="../assets/images/call.svg" alt="tel" class="contacts__icon">
             <a href="callto:+38 (099) 267-61-86" class="contacts__link">
                     +38 (099) 267-61-86
-                </a>        
+                </a>
             </li>
-            <li class="contacts__item d-flex align-items-center">
+            <li class="contacts__item">
                 <img src="../assets/images/call.svg" alt="tel" class="contacts__icon">
                 <a href="callto:+38 (096) 123-08-58" class="contacts__link">
                         +38 (096) 123-08-58
-                </a>               
+                </a>
             </li>
-            <li class="contacts__item d-flex align-items-center">
-                <a href="mailto: objectplus13@gmail.com" class="call-ordered-btn">
+            <li class="contacts__item">
+                <a href="#" class="call-ordered-btn">
                     Заказать звонок
-                </a>        
+                </a>
             </li>
-            <li class="contacts__item d-flex align-items-center">
+            <li class="contacts__item">
                 <img src="../assets/images/mail_outline.svg" alt="mail" class="contacts__icon">
                 <a href="mailto: objectplus13@gmail.com" class="contacts__link mail__link">
                     objectplus13@gmail.com
-                </a>        
+                </a>
             </li>
-            <li class="contacts__item d-flex align-items-center">
+            <li class="contacts__item">
                 <img src="../assets/images/map.svg" alt="" class="contacts__icon">
                 <a href="#" class="contacts__link">
                     г. Харьков, ул. Сумская, 40
@@ -393,8 +391,8 @@
             </li>
         </ul>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.954349323174!2d36.23589295356249!3d50.00034606762052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e6f5ce0153%3A0xacfbd54c5bf0699!2zS2hkdHViYSwg0LLRg9C70LjRhtGPINCh0YPQvNGB0YzQutCwLCA0MCwg0KXQsNGA0LrRltCyLCDQpdCw0YDQutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDYxMDAw!5e0!3m2!1sru!2sru!4v1639334945123!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
-        </div> 
+            <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.954349323174!2d36.23589295356249!3d50.00034606762052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e6f5ce0153%3A0xacfbd54c5bf0699!2zS2hkdHViYSwg0LLRg9C70LjRhtGPINCh0YPQvNGB0YzQutCwLCA0MCwg0KXQsNGA0LrRltCyLCDQpdCw0YDQutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDYxMDAw!5e0!3m2!1sru!2sru!4v1639334945123!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
+        </div>
             </div>
         </div>
     </section>

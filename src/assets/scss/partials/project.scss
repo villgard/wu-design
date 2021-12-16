@@ -5,7 +5,7 @@
     &__title {
         padding-left: 5px;
         max-width: 977px;
-        margin-bottom: 68px;
+        margin-bottom: min(calc(30px + 16 * ((100vw - 320px) / (1280 - 320))), 60px);
     }
     &__accordion {
         margin-bottom: 80px;
