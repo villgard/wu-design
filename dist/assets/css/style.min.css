@@ -816,7 +816,14 @@ a:hover, a:focus, a:visited {
   padding-top: 75px;
 }
 .section__body {
-  padding: min(30px + 16 * (100vw - 320px) / 960, 190px) 0;
+  padding: min(30px + 16 * (100vw - 320px) / 840, 190px) 0;
+  min-height: 100%;
+}
+.section__container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  min-height: 100%;
 }
 .section__heading {
   position: relative;
@@ -859,41 +866,42 @@ a:hover, a:focus, a:visited {
 .section__btn-dark:hover {
   color: #FFFFFF;
 }
-.section__container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 .section__content {
   flex: 0 0 100%;
-  max-height: 700px;
 }
 .section__bg {
-  background-color: #FBFBFB;
+  background-color: rgba(50, 50, 50, 0.4);
 }
 
 @media (min-width: 767px) {
   .section {
     display: flex;
-    margin-bottom: -44.5%;
   }
   .section__body {
     width: 60%;
   }
+  .section__content {
+    padding-bottom: -44.5%;
+    max-height: 700px;
+  }
   .section__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+  }
+  .section__img-wrapper {
     position: relative;
     flex: 0 0 40%;
     transform: translateX(-100%);
     padding-bottom: 44.5%;
   }
-  .section__imgimg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+}
+@media screen and (min-width: 1730px) {
+  .section {
+    max-height: 775px;
+  }
+  .section__img {
     object-fit: cover;
   }
 }
