@@ -1,4 +1,4 @@
-@import "../assets/global";
+@use "../assets/global";
 
 
 .accordion {
@@ -44,7 +44,7 @@
         &:checked ~ .accordion-body {
             display: block;
         }
-        
+
     }
-    
+
 }

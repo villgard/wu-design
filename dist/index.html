@@ -104,12 +104,12 @@
                             <p class="section__text">
                                 Object+ - это одна из ведущих студий дизайна интерьера и архитектуры в Харькове.
                             </p>
-                            <button class="section__btn  text-uppercase">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                            <button class="section__btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
                         </div>
                     </div>
                 </div>
                 <div class="section__img-wrapper">
-                    <img class="section__img img-fluid" src="../assets/images/1.png" alt="фон главного экрана" oncontextmenu="return false">
+                    <img src="../assets/images/1.png" alt="main__bg-img" class="section__img">
                 </div>
             </section>
             <section class="achievements">
@@ -142,29 +142,30 @@
                     </ul>
                 </div>
             </section>
+        </main>
         <section class="about">
             <section class="section">
                 <div class="section__content">
                     <div class="_container-custom">
                         <div class="about-section__body">
-                            <h2 class="about-section__title block-title text-uppercase">
+                            <h2 class="about-section__title block-title">
                                 О СТУДИИ OBJECT+
                             </h2>
-                            <p class="about-section__text text-left">
+                            <p class="about-section__text">
                                 Object+ - это одна из ведущих студий дизайна интерьера и архитектуры.
                             </p>
-                            <p class="about-section__text text-left">
+                            <p class="about-section__text">
                                 Мы предоставляем услуги по разработке дизайн-проектов квартир, домов, коттеджей, кафе, ресторанов, офисов, торговых центров и магазинов, а также выполняем архитектурные проекты для строительства одноэтажных, двухэтажных, многоэтажных домов и общественных зданий.
                             </p>
-                            <p class="about-section__text text-left">
+                            <p class="about-section__text">
                                 За годы работы мы приобрели прекрасную репутацию, создавая уникальные и изящные интерьеры, которые восхищают даже самых требовательных ценителей красоты.
                             </p>
                             <button class="section__btn section__btn-dark text-uppercase about-section__btn">Связаться с нами</button>
                         </div>
                     </div>
                 </div>
-                <div class="about-section__img section__img">
-                    <img src="../assets/images/about-image.svg" alt="Эскиз студии " class="img-fluid" oncontextmenu="return false">
+                <div class="about-section__img-wrapper">
+                    <img class="about-section__img" src="../assets/images/about-image.svg" alt="about-block-background">
                 </div>
             </section>
         </section>
@@ -262,39 +263,39 @@
                     Наши специалисты возьмут на себя все заботы: разработка дизайн-проектов, создание чертежей для строителей, прорисовка эскизов мебели, визуализация будущего интерьера и сопровождение кропотливого процесса ремонтно-строительных работ до их полного завершения.
                 </p>
                 <ul class="promotion__list">
-                    <li class="promotion__item d-flex flex-column text-center">
-                        <img src="../assets/images/design-icon-1.svg" alt="1" class="icon rounded mx-auto d-block img-fluid">
-                        <p class="icon__text">
+                    <li class="promotion__item">
+                        <img src="../assets/images/design-icon-1.svg" alt="1" class="promotion__icon img-fluid">
+                        <p class="promotion__icon-text">
                             Оригинальная идея
                         </p>
                     </li>
                     <li class="promotion__item">
-                        <img src="../assets/images/design-icon-2.png" alt="2" class="icon rounded mx-auto d-block img-fluid">
-                        <p class="icon__text">
+                        <img src="../assets/images/design-icon-2.png" alt="2" class="promotion__icon img-fluid">
+                        <p class="promotion__icon-text">
                             Чертежная документация
                         </p>
                     </li>
-                    <li class="promotion__item d-flex flex-column text-center">
-                        <img src="../assets/images/design-icon-3.svg" alt="3" class="icon rounded mx-auto d-block img-fluid">
-                        <p class="icon__text">
+                    <li class="promotion__item">
+                        <img src="../assets/images/design-icon-3.svg" alt="3" class="promotion__icon img-fluid">
+                        <p class="promotion__icon-text">
                             Подбор материалов
                         </p>
                     </li>
-                    <li class="promotion__item d-flex flex-column text-center">
-                        <img src="../assets/images/design-icon-4.svg" alt="4" class="icon rounded mx-auto d-block img-fluid">
-                        <p class="icon__text">
+                    <li class="promotion__item">
+                        <img src="../assets/images/design-icon-4.svg" alt="4" class="promotion__icon img-fluid">
+                        <p class="promotion__icon-text">
                             3D визуализация
                         </p>
                     </li>
-                    <li class="promotion__item d-flex flex-column text-center">
-                        <img src="../assets/images/design-icon-5.png" alt="5" class="icon rounded mx-auto d-block img-fluid">
-                        <p class="icon__text">
+                    <li class="promotion__item">
+                        <img src="../assets/images/design-icon-5.png" alt="5" class="promotion__icon img-fluid">
+                        <p class="promotion__icon-text">
                             Сопровождение ремонтных работ
                         </p>
                     </li>
-                    <li class="promotion__item d-flex flex-column justify-content-between">
-                        <img src="../assets/images/design-icon-6.svg" alt="6" class="icon rounded mx-auto d-block img-fluid">
-                        <p class="icon__text">
+                    <li class="promotion__item">
+                        <img src="../assets/images/design-icon-6.svg" alt="6" class="promotion__icon img-fluid">
+                        <p class="promotion__icon-text">
                             Финальное оформление согласно дизайн-проекту
                         </p>
                     </li>
@@ -307,8 +308,7 @@
             <h2 class="projects-block__title block-title">
               Проекты
             </h2>
-            <div class="projects-block__gallery">
-              <div class="gallery__row">
+            <div class="projects-block__gallery gallery">
                 <a href="#" class="gallery__card">
                   <img src="../assets/images/proj-1.png" alt="image" class="img-fluid">
                   <p>ЖК Сокольники</p>
@@ -321,9 +321,8 @@
                   <img src="../assets/images/proj-3.png" alt="image" class="img-fluid">
                   <p>ЖК Мира</p>
                 </a>
-              </div>
-              <div class="gallery__row">
                 <a href="#" class="gallery__card gallery__card-xl">
+                  <span class="" style="background-image: url(../assets/images/proj-4.png)"></span>
                   <img src="../assets/images/proj-4.png" alt="image" class="img-fluid">
                   <p>ЖК Мередиан, проект 1</p>
                 </a>
@@ -331,7 +330,6 @@
                   <img src="../assets/images/proj-5.png" alt="image" class="img-fluid">
                   <p>ЖК Мередиан, проект 2</p>
                 </a>
-              </div>
             </div>
             <div class="projects-block__link-wrapper">
               <a href="/portfolio.html" class="projects-block__link section__btn section__btn-dark">
@@ -379,14 +377,14 @@
             <section class="form__section">
                 <div class="form__content">
                     <div class="_container-custom">
-                        <section class="form__app d-flex flex-column">
-                            <h2 class="form__title block-title text-uppercase">
+                        <section class="form__app">
+                            <h2 class="form__title block-title">
                                 РАССЧИТАЙТЕ СТОИМОСТЬ РАБОТЫ
                             </h2>
                             <p class="form__description">
                                 Оставьте заявку, и мы свяжемся с Вами, проведем консультацию и рассчитаем стоимость работы
                             </p>
-                            <form action="" class="form__form d-flex flex-column justify-content-center ">
+                            <form action="" class="form__form">
                                 <input type="text" class="input text-input" name="text-input" placeholder="Ваше Имя">
                                 <input type="tel" class="input phone-input" name="phone-input" placeholder="Ваш номер телефона">
                                 <button class="btn section__btn section__btn-dark text-uppercase btn__large form__btn">Получить консультацию</button>
@@ -398,7 +396,8 @@
                     <img src="../assets/images/form-photo.png" alt="" class="form__img img-fluid">
                 </section>
             </section>
-        </div><section class="contacts-block">
+        </div>
+        <section class="contacts-block">
             <div class="_container-custom">
                 <h2 class="contacts-block__title block-title text-uppercase">
                     СВЯЗАТЬСЯ С НАМИ

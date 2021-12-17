@@ -1,10 +1,12 @@
-@import "../assets/global";
+@use "../assets/global";
 
 .form {
     &__section {
         overflow: hidden;
     }
     &__app {
+        display: flex;
+        flex-direction: column;
         width: 60%;
         padding: 10% 5% 10% 0;
     }
@@ -12,9 +14,13 @@
         flex: 0 0 100%;
         background-color: #FBFBFB;
     }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     &__title {
         max-width: 480px;
-        margin-bottom: 55px;
         position: relative;
         z-index: 10;
     }
@@ -79,6 +85,9 @@
     font-weight: 300;
     color: #575757;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     &+& {
         margin-top: 20px;

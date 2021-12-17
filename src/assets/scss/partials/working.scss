@@ -1,4 +1,4 @@
-@import "../assets/global";
+@use "../assets/global";
 
 .working {
     margin-bottom: min(calc(40px + 16 * ((100vw - 320px) / (1280 - 320))), 80px);
